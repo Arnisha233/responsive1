@@ -173,7 +173,13 @@
   padding-top: 10px;
 }
 .love-enjoy-img {
+  width: 708px;
+  height: 982px;
   position: relative;
+}
+.love-enjoy-img img {
+  width: 100%;
+  height: 100%;
 }
 .love-enjoy-img-experience {
   width: 342px;
@@ -200,6 +206,43 @@
   height: 200px;
 }
 /* love and enjoy section end */
+
+/* fact section start */
+.fact {
+  margin: 50px 0;
+}
+.fact-content .fact-content-title {
+  color: var(--Dark-01, #131313);
+  font-family: "Work Sans";
+  font-size: 45px;
+  font-weight: 700;
+}
+.fact-content .fact-content-description {
+  color: var(--Dark-03, #727272);
+  font-family: "Work Sans";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  width: 542px;
+  padding-bottom: 50px;
+}
+.fact-item {
+  display: flex;
+  justify-content: space-around;
+  width: 90%;
+  margin: 0 auto;
+  border: 3px solid black;
+}
+.fact-product {
+  border-radius: 8px;
+  border: 1px solid #ff900e;
+  border: 3px solid red;
+}
+.fact-single-product {
+  text-align: center;
+  border: 3px solid aqua;
+}
+/* fact section end */
 
 /* media query start for mobile */
 @media screen and (max-width: 576px) {
@@ -255,6 +298,7 @@
   }
 
   .love-enjoy-img {
+    width: 500px;
     position: static;
   }
   .love-enjoy-img img {

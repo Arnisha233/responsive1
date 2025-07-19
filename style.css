@@ -299,6 +299,10 @@
   .features-images {
     grid-template-columns: repeat(1, 1fr);
   }
+  .features-images img {
+    width: 100%;
+    height: 100%;
+  }
   /* our features section end */
 
   /* love and enjoy section start */
@@ -306,7 +310,7 @@
     flex-direction: column;
   }
   .love-enjoy-text .love-enjoy-description {
-    width: 400px;
+    width: 100%;
   }
   .love-enjoy-box {
   }
@@ -339,7 +343,7 @@
     margin: 0;
   }
   .fact-content .fact-content-description {
-    width: 400px;
+    width: 100%;
   }
   .fact-item {
     flex-direction: column;

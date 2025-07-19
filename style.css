@@ -95,7 +95,6 @@
 .features {
   max-width: 1320px;
   margin: 0 auto;
-  border: 3px solid black;
 }
 .features-content {
   display: flex;
@@ -208,7 +207,7 @@
 /* love and enjoy section end */
 
 /* fact section start */
-.fact {
+#fact {
   margin: 50px 0;
 }
 .fact-content .fact-content-title {
@@ -231,18 +230,30 @@
   justify-content: space-around;
   width: 90%;
   margin: 0 auto;
-  border: 3px solid black;
 }
 .fact-product {
   border-radius: 8px;
-  border: 1px solid #ff900e;
-  border: 3px solid red;
 }
 .fact-single-product {
   text-align: center;
-  border: 3px solid aqua;
 }
 /* fact section end */
+
+/* footer section start */
+.footer-contetn {
+  border-radius: 8px;
+  background: #fff4e7;
+  padding: 40px 0;
+  margin: 50px 0;
+}
+.footer-contetn .footer-text {
+  color: var(--Dark-02, #424242);
+  text-align: center;
+  font-family: "Work Sans";
+  font-size: 20px;
+  font-weight: 400;
+}
+/* footer section end */
 
 /* media query start for mobile */
 @media screen and (max-width: 576px) {
@@ -294,12 +305,22 @@
   .love-enjoy-content {
     flex-direction: column;
   }
+  .love-enjoy-text .love-enjoy-description {
+    width: 400px;
+  }
   .love-enjoy-box {
+  }
+  .love-enjoy-box .love-enjoy-box-text {
+    width: 100%;
+  }
+  .love-enjoy-box-decription {
+    width: 100%;
   }
 
   .love-enjoy-img {
-    width: 500px;
-    position: static;
+    width: 100%;
+    height: 100%;
+    position: relative;
   }
   .love-enjoy-img img {
     width: 100%;
@@ -309,8 +330,26 @@
     position: static;
     bottom: 0;
     left: 0;
+    margin-bottom: 50px;
   }
   /* love and enjoy section end */
+
+  /* fact section start */
+  #fact {
+    margin: 0;
+  }
+  .fact-content .fact-content-description {
+    width: 400px;
+  }
+  .fact-item {
+    flex-direction: column;
+    width: 90%;
+  }
+  .fact-product {
+    margin: 20px 0;
+  }
+
+  /* fact section end */
 }
 /* media qurey end for mobile */
 
